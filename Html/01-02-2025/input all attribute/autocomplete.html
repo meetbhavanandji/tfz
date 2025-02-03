@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocomplete</title>
+</head>
+
+<body>
+    <fieldset>
+        <form action="./action_page.php" method="get">
+            <label for="username"> Username </label>
+            <input type="text" name="username" id="username" autofocus="autofocus" dirname="username.dir"> <br><br>
+            <label for="password"> Password </label>
+            <input type="password" name="password" id="password" autocomplete="new-password">
+        </form>
+        <p> <strong>Note : </strong> here in username i use a autofocus attribute for autofocus we page load and in
+            password i use a autocomplete
+            attribute and another attribute is added which dirname is stand for direction name which save the text
+            direction also.</p>
+    </fieldset>
+</body>
+
+</html>
