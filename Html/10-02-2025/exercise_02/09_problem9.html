@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appoinment form</title>
+    <style>
+        .a1 {
+            text-align: center;
+        }
+
+        .a2 {
+            text-align: center;
+            font-family: sans-serif;
+
+        }
+        .form{
+            width: 200;
+            text-align: center;
+        }
+
+        .form input{
+            padding: 20px;
+            width: 250px;
+    
+
+        }
+
+        .button{
+            background-color: black;
+            color: white;
+            padding: 10px 12px;
+            margin-left: 230px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="a1">MAKE AN APPOINTMENT</h1>
+    <hr>
+    <h3 class="a2">Beast Tour & Travel</h3>
+    <h5 class="a2">140 NJ-33, Mercerville NJ 08619</h5>
+    <div class="form">
+        <form action="action.php" method="get" id="next">
+            <input type="text" name="fname" id="fname" placeholder="Firstname"><br><br>
+            <input type="email" name="email" id="email;" placeholder="Email"><br><br>
+            <input type="tel" name="number" id="number" placeholder="Phone Number"><br><br>
+        </form>
+        <button type="submit" class="button" form="next" onclick="alert('subitted')">NEXT</button>
+
+    </div>
+</body>
+
+</html>
