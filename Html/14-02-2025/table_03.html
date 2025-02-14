@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar Schedule</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            background-color: #e6e6e6;
+        }
+        .highlight {
+            background-color: #ffff99; /* Light Yellow */
+        }
+        .highlight-blue {
+            background-color: #ccffff; /* Light Blue */
+        }
+        td[rowspan] {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<h3>To create an HTML file as "table.html".</h3>
+
+<table>
+    <tr>
+        <th rowspan="2">Day</th>
+        <th colspan="2">Schedule</th>
+        <th rowspan="2">Seminar</th>
+    </tr>
+    <tr>
+        <th>Begin</th>
+        <th>End</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Monday</td>
+        <td class="highlight">8:00 a.m.</td>
+        <td class="highlight-blue">5:00 p.m.</td>
+        <td>Introduction to XML</td>
+    </tr>
+    <tr>
+        <td class="highlight">8:00 a.m.</td>
+        <td class="highlight-blue">11:00 a.m.</td>
+        <td>Validity: DTD and Relax NG</td>
+    </tr>
+    <tr>
+        <td>Tuesday</td>
+        <td class="highlight">11:00 a.m.</td>
+        <td class="highlight-blue">2:00 p.m.</td>
+        <td>XPath</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Wednesday</td>
+        <td class="highlight">2:00 p.m.</td>
+        <td class="highlight-blue">5:00 p.m.</td>
+        <td>XSL Transformations</td>
+    </tr>
+    <tr>
+        <td class="highlight">8:00 a.m.</td>
+        <td class="highlight-blue">12:00 p.m.</td>
+        <td>XSL Formatting Objects</td>
+    </tr>
+</table>
+
+</body>
+</html>
