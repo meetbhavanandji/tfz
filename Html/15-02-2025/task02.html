@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage </title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./PIC/photo-.jpg') no-repeat center center fixed;
+            ;
+        }
+
+        .nav {
+            overflow: hidden;
+            margin: 0px;
+            padding: 0px;
+            position: sticky;
+            top: o;
+        }
+
+        .menu,
+        li {
+            list-style-type: none;
+            float: right;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .menu a {
+            color: rgba(255, 255, 255, 0.8);
+            display: block;
+            text-align: left;
+            text-decoration: none;
+            padding: 10px;
+            margin-right: 30px;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        a:hover {
+            color: rgb(255, 255, 255);
+
+        }
+
+        .head1 {
+            font-family: cursive;
+            margin: auto;
+            text-align: center;
+            margin-top: 150px;
+            font-size: 35px;
+            color: whitesmoke;
+        }
+
+        .head2 {
+            color: aqua;
+        }
+
+        button {
+            margin-left: 45%;
+            background-color: transparent;
+            padding: 10px;
+            border: 1px solid whitesmoke;
+            color: white;
+            font-family: serif;
+        }
+
+        button:hover {
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        /* For smaller screens */
+        @media (max-width: 768px) {
+            .nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav ul li {
+                float: none;
+                margin: 5px 0;
+            }
+
+            .head1 {
+                font-size: 25px;
+                margin-top: 100px;
+            }
+
+            button {
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="menu">
+            <ul>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#home">HOME</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head1">
+        <h1>WE ARE <span class="head2">CREATIVE</span></h1>
+    </div>
+    <button type="button">CONTACT US</button>
+</body>
+
+</html>
+
+
