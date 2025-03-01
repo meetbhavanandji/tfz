@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid boxes</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .box {
+        float: left;
+        width: 33.33%;
+        padding: 50px;
+      }
+      .clear::after{
+        display: table;
+        clear: both;
+        content: "";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="clear">
+      <div class="box" style="background-color: #bbb">
+        <p style="font-size: x-large">This is something text.</p>
+      </div>
+      <div class="box" style="background-color: #ccc">
+        <p style="font-size: x-large">This is something text.</p>
+      </div>
+      <div class="box" style="background-color: #ddd">
+        <p style="font-size: x-large">This is something text.</p>
+      </div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta soluta
+      aperiam iure, neque voluptatum enim. Veniam perferendis eos quia corrupti
+      dolores et fugit! Ipsum similique fugiat nesciunt ex? Dignissimos deserunt
+      cum qui iure dicta sapiente repellendus totam voluptate aperiam,
+      consectetur quo delectus repudiandae non eveniet. Ab itaque quod, aliquam
+      necessitatibus debitis sint nesciunt hic dolores ex unde quae eos
+      architecto aspernatur molestias in saepe quasi. Praesentium rem, delectus
+      recusandae aliquid autem minus necessitatibus, fuga modi ipsa dolor
+      tenetur enim omnis in culpa commodi eius quas. A dolores molestiae fugiat
+      soluta recusandae magni doloribus aut, aliquid, quis, officiis ea quos
+      iure.
+    </p>
+  </body>
+</html>
