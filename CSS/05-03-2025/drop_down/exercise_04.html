@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .dropdown{
+            display: inline-block;
+            position: relative;
+        }
+        .dropdown_content{
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            z-index: 1;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            background-color: #f9f9f9;
+        }
+        .dropdown:hover .dropdown_content{
+            display: block;
+        }
+        .dtl{
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <img src="../pic/01.jpg" alt="01" width="100px" height="50px" />
+      <div class="dropdown_content">
+        <img src="../pic/01.jpg" alt="01" width="300px" height="200px" />
+        <div class="dtl">Beautiful Cinque Terre</div>
+      </div>
+    </div>
+   
+    <div class="dropdown">
+      <img src="../pic/02.jpg" alt="02" width="100px" height="50px" />
+      <div class="dropdown_content">
+        <img src="../pic/02.jpg" alt="02" width="300px" height="200px" />
+        <div class="dtl">Beautiful Cinque Terre</div>
+      </div>
+    </div>
+   
+    <div class="dropdown">
+      <img src="../pic/03.jpg" alt="03" width="100px" height="50px" />
+      <div class="dropdown_content">
+        <img src="../pic/03.jpg" alt="03" width="300px" height="200px" />
+        <div class="dtl">Beautiful Cinque Terre</div>
+      </div>
+    </div>
+  </body>
+</html>
