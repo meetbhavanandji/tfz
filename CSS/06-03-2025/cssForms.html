@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cssForms</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0px;
+        display: inline-block;
+        border-radius: 5px;
+        border: 1px solid #333;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        background-color: #04aa6d;
+        color: white;
+        padding: 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin: 10px 0;
+      }
+      input[type="submit"]:hover {
+        background-color: #039d64;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h2>Using CSS styling the form</h2>
+      <form action="action.php" method="get">
+        <label for="fname">First Name </label>
+        <input
+          type="text"
+          name="firstname"
+          id="fname"
+          placeholder="Your name.."
+        />
+        <label for="lname">Last Name </label>
+        <input
+          type="text"
+          name="lastname"
+          id="lname"
+          placeholder="Your last name.."
+        />
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option value="australia">Australia</option>
+          <option value="caneda">Caneda</option>
+          <option value="usa">USA</option>
+        </select>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

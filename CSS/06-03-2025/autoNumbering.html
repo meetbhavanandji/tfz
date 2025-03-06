@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Numbering </title>
+    <style>
+        body{
+            counter-reset: section;
+        }
+        h3::before{
+            counter-increment: section;
+            content : "Section " counter(section)": ";
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Auto counter</h1>
+    <h3>HTML Tutorial</h3>
+    <h3>CSS Tutorial</h3>
+    <h3>Javascript Tutorial</h3>
+    <h3>Pythan Tutorial</h3>
+    <h3>SQL Tutorial</h3>
+</body>
+</html>
