@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+            background-color: cadetblue;
+        }
+        .item_1{
+            /* flex: 50%; */
+            text-align: center;
+            font-size: 30px;
+            line-height: 75px;
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 20px;
+            padding: 20px;
+        }
+        .item_2{
+            /* flex: 50%; */
+            line-height: 75px;
+            text-align: center;
+            font-size: 30px;
+            width: 100px;
+            margin: 20px;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        
+        @media (max-width:600px) {
+            /* .flex-container{
+                 flex-direction: column; 
+            } */
+            .item_1, .item_2{
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item_1">1</div>
+        <div class="item_2">2</div>
+    </div>
+</body>
+</html>
