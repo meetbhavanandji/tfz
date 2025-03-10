@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>z-index</title>
+    <style>
+      .container {
+        position: relative;
+      }
+      .box-1 {
+        position: relative;
+        border: 1px solid black;
+        width: 80%;
+        height: 100px;
+        margin: auto;
+        z-index: 1;
+      }
+      .box-2{
+        position: absolute;
+        background-color: pink;
+        width: 16%;
+        left: 65%;
+        top: -25%;
+        opacity: 0.9;
+        height: 120px;
+    }
+      .box-3{
+        position: absolute;
+        background-color: aqua;
+        width: 60%;
+        left: 9%;
+        top: 25%;
+    }
+    </style>
+  </head>
+  <body>
+    <div style="font-size: 50px;">Z- index property</div>
+    <div class="container">
+      <div class="box-1">Box 1 - has z-index 1</div>
+      <div class="box-2">Box 2 - has z-index 2(will be put above .box-1)</div>
+      <div class="box-3">
+        Box 3 - has z-index 3(will be put above .box-1 & .box-2)
+      </div>
+    </div>
+  </body>
+</html>

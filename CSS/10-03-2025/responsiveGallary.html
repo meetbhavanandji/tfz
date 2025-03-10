@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallary</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .body{
+            text-align: center;
+            margin: 0;
+
+        }
+
+        .header {
+            text-align: center;
+            font-family: arial;
+            padding: 70px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 5px;
+        }
+
+        img {
+            margin-top: 5px;
+            vertical-align: middle;
+
+        }
+
+        @media (max-width:800px) {
+
+            .column {
+                flex: 50%;
+                max-width: 50%;
+
+            }
+        }
+        @media (max-width:500px) {
+
+            .column {
+                flex: 100%;
+                max-width: 100%;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Responsive Gallary</h1>
+        <h4>Resize the browser window to see the responsive effect</h4>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="./pic/falls2.jpg" alt="01" style="width: 100%;">
+            <img src="./pic/nature.jpg" alt="02" style="width: 100%;">
+            <img src="./pic/paris.jpg" alt="03" style="width: 100%;">
+            <img src="./pic/rocks.jpg" alt="04" style="width: 100%;">
+            <img src="./pic/wedding.jpg" alt="05" style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="./pic/rocks.jpg" alt="04" style="width: 100%;">
+            <img src="./pic/wedding.jpg" alt="05" style="width: 100%;">
+            <img src="./pic/paris.jpg" alt="03" style="width: 100%;">
+            <img src="./pic/nature.jpg" alt="02" style="width: 100%;">
+            <img src="./pic/falls2.jpg" alt="01" style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="./pic/falls2.jpg" alt="01" style="width: 100%;">
+            <img src="./pic/nature.jpg" alt="02" style="width: 100%;">
+            <img src="./pic/paris.jpg" alt="03" style="width: 100%;">
+            <img src="./pic/rocks.jpg" alt="04" style="width: 100%;">
+            <img src="./pic/wedding.jpg" alt="05" style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="./pic/rocks.jpg" alt="04" style="width: 100%;">
+            <img src="./pic/wedding.jpg" alt="05" style="width: 100%;">
+            <img src="./pic/paris.jpg" alt="03" style="width: 100%;">
+            <img src="./pic/nature.jpg" alt="02" style="width: 100%;">
+            <img src="./pic/falls2.jpg" alt="01" style="width: 100%;">
+        </div>
+
+    </div>
+</body>
+
+</html>

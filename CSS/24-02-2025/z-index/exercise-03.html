@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> without z Index</title>
+    <style>
+        .blackbox {
+            width: 150px;
+            height: 100px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        .graybox {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            background-color: gray;
+            top: 50px;
+            left: 50px;
+        }
+
+        .greenbox {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            background-color: green;
+            top: 80px;
+            left: 80px;
+        }
+
+        .bluebox {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            background-color: blue;
+            top: 120px;
+            left: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>in html which last coded is shown on top.</h2>
+    <div class="blackbox">Black-box</div>
+    <div class="graybox">Gray-box</div>
+    <div class="greenbox">Green-box</div>
+    <div class="bluebox">Blue-box</div>
+</body>
+
+</html>

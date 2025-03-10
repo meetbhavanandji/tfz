@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inherit</title>
+    <style>
+        .example {
+            border: 2px solid red;
+            margin-left: 200px;
+        }
+
+        .one {
+            margin-left: inherit;
+            /*here inherit mean it copy it's parent class(div) property, */
+        }
+
+        .two {
+            margin: 50px 0 20px 0;
+            border: 1px solid red;
+        }
+
+        .three {
+            margin: 20px 10px 0 0;
+            border: 1px solid red;
+            text-align: center;
+        }
+
+        .example-2 {
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="example">
+        <p class="one"> This is a sample text.</p>
+    </div>
+
+
+<hr>
+
+
+    <div class="example-2">
+        <h2 class="two">Heading 1</h2>
+        <h2 class="three">Heading 2</h2>
+    </div>
+</body>
+
+</html>

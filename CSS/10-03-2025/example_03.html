@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_03</title>
+    <style>
+        .flex_container{
+            display: flex;
+            font-size: 30px;
+            text-align: center;
+            flex-direction: row;
+
+        }
+        .left_div{
+            flex: 50%;
+            background-color: lightcoral;
+        }
+        .right_div{
+            flex: 50%;
+            background-color: lightgreen;
+        }
+        @media screen and (max-width:800px) {
+            .flex_container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex_container">
+        <div class="left_div">1</div>
+        <div class="right_div">2</div>
+    </div>
+</body>
+</html>
