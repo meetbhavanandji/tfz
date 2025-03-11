@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex items</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            background-color: DodgerBlue;
+        }
+
+        .container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+            flex-grow: 0;
+        }
+        #item_01{
+            flex-grow: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Flex Grow</h1>
+        <div class="container">
+            <div id="item_01" class="item">1</div>
+            <div id="item_02" class="item">2</div>
+            <div id="item_03" class="item">3</div>
+            <div id="item_04" class="item">4</div>
+            <div id="item_05" class="item">5</div>
+        </div>
+    </main>
+</body>
+
+</html>

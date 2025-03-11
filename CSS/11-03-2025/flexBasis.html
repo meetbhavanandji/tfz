@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>container properties</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 5px;
+            height: 150px;
+            border: 2px solid black;
+        }
+
+        .box {
+            height: 100px;
+            background-color: dodgerblue;
+            font-size: 20pt;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Flex Basis</h1>
+    <div class="container">
+        <div class="box">short</div>
+        <div class="box">a bit longer</div>
+        <div class="box">Lorem ipsum</div>
+        <div class="box">div</div>
+        <div class="box">this is the longest text example</div>
+    </div>
+</body>
+
+</html>
