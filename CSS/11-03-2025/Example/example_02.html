@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>container properties</title>
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid black;
+            flex-direction: row;   /*for fle direction */
+            justify-content: center;        /* for main axis access */
+             align-items: center;      /*  for cross axis access */
+             align-content: center;     /*for access multiple line in cross axis*/
+             gap: 20px;     /*for gap between in every items*/
+            height: 500px;
+        }
+        .box{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100px;
+            background-color: dodgerblue;
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+</body>
+</html>
