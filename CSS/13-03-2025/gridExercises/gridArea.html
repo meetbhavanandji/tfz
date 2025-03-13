@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        .grid-container {
+            display: grid;
+            border: 6px solid darkgray;
+            grid-template-areas:
+                "header header header"
+                "aside article empty"
+                "footer footer footer";
+                padding: 20px;
+                gap: 15px;
+        }
+        .item{
+            /* border: 1px solid red; */
+            height: 100px ;
+            /* width: 100px; */
+            text-align: center;
+        }
+        .item-1{
+            grid-area: header;
+            background-color: lightblue;
+        }
+        .item-2{
+            grid-area: aside;
+            background-color: lightcyan;
+        }
+        .item-3{
+            grid-area: article;
+            background-color: lightgreen;
+        }
+        .item-4{
+            grid-area: empty;
+            background-color: lightgray;
+        }
+        .item-5{
+            grid-area: footer;
+            background-color: lightpink;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item item-1">HEADER</div>
+        <div class="item item-2">ASIDE</div>
+        <div class="item item-3">ARTICLE</div>
+        <div class="item item-4">EMPTY</div>
+        <div class="item item-5">FOOTER</div>
+    </div>
+</body>
+
+</html>

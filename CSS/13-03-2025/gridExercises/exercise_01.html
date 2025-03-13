@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise</title>
+    <style>
+        body {
+            background-color: rgb(54, 46, 108);
+
+        }
+
+        .grid-container {
+            display: grid;
+            margin-top: -50px;
+            width: 57rem;
+            justify-self: center;
+            height: 70vh;
+            padding: 0px;
+            /* border: 2px solid black; */
+            /* border-radius: 100px; */
+            background-color: darkslateblue;
+            grid-template-areas:
+                "box1 box2 box2 box3 box4 box5"
+                "box6 box6 box7 box3 box4 box5"
+                "box8 box9 box7 box3 box4 box5";
+            gap: 5px;
+        }
+
+        /* .item {
+            border: 2px solid black;
+        } */
+
+        .gradient {
+            background-image: linear-gradient(45deg, rgb(62, 240, 240), rgb(72, 176, 217));
+        }
+
+        .gradient02 {
+            background-image: linear-gradient(45deg, rgb(191, 108, 161), rgb(238, 177, 188));
+        }
+
+
+        .item-1 {
+            grid-area: box1;
+        }
+
+        .item-2 {
+            grid-area: box2;
+        }
+
+        .item-3 {
+            grid-area: box3;
+        }
+
+        .item-4 {
+            grid-area: box4;
+        }
+
+        .item-5 {
+            grid-area: box5;
+            border-bottom-right-radius: 80px;
+
+        }
+
+        .item-6 {
+            grid-area: box6;
+        }
+
+        .item-7 {
+            grid-area: box7;
+        }
+
+        .item-8 {
+            grid-area: box8;
+            border-bottom-left-radius: 80px;
+
+        }
+
+        .item-9 {
+            grid-area: box9;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 10px;
+            font-size: xx-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+
+        .title02 {
+            text-align: center;
+            margin-top: 10px;
+            font-size: x-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item item-1 gradient"></div>
+        <div class="item item-2 gradient"></div>
+        <div class="item item-3 gradient02"></div>
+        <div class="item item-4 gradient02"></div>
+        <div class="item item-5 gradient02"></div>
+        <div class="item item-6 gradient"></div>
+        <div class="item item-7 gradient"></div>
+        <div class="item item-8 gradient"></div>
+        <div class="item item-9 gradient"></div>
+    </div>
+    <div class="title">
+        <h1>CSS GRID & FLEXBOX</h1>
+    </div>
+    <div class="title02">
+        <h2>A Brief Juxtaposition</h2>
+    </div>
+</body>
+
+</html>
