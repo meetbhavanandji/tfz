@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> round corner from specific side</title>
+    <style>
+        .four {
+            background-color: dodgerblue;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 200px;
+            height: 150px;
+            border-radius: 20px 60px 15px 0px;
+            /* top-left, top-right, bottom-right, bottom-left */
+        }
+        .three {
+            background-color: dodgerblue;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 200px;
+            height: 150px;
+            border-radius: 20px 10px 50px ;
+            /* firstvalue=top-left, second value =top-right & bottom-left, bottom-right */
+        }
+        .two {
+            background-color: dodgerblue;
+            color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+            border-radius: 20px 60px ;
+            /* firstvalue=top-left & bottom-right , second value =top-right & bottom-left,  */
+
+        }
+        .one {
+            background-color: dodgerblue;
+            color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+            border-radius: 20px;
+            /* applied all sides equally */
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Four Value</h3>
+    <div class="four">Four Value</div>
+    <div class="three">Three Value</div>
+    <div class="two">Two Value</div>
+    <div class="one">One Value</div>
+</body>
+
+</html>
