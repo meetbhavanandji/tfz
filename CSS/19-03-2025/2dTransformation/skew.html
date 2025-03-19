@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skew X</title>
+    <style>
+        body {
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+        div {
+            width: 100px;
+            height: 60px;
+            background-color: lightgreen;
+            border: 1px solid black;
+            margin-bottom: 50px;
+        }
+
+        div#item1:hover {
+            transform: skew(10deg, 10deg);
+        }
+
+        div#item2 {
+            transform: skew(10deg, 10deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="item1"> hover me ! </div>
+    <div>normal</div>
+    <div id="item2">skew 10 deg, 10 deg</div>
+</body>
+
+</html>
