@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotateX</title>
+    <style>
+        div {
+            width: 200px;
+            height: 130px;
+            background-color: lightgreen;
+            border: 1px solid gray;
+            margin: 20px;
+        }
+
+        #item2:hover {
+            transform: rotateX(180deg);
+            transition-duration: 1.5s;
+        }
+        #item3:hover {
+            transform: rotateY(180deg);
+            transition-duration: 2s;
+        }
+        #item4:hover {
+            transform: rotateZ(180deg);
+            transition-duration: 1.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div>normal </div>
+    <div id="item2">ROTATE in X axis </div>
+    <div id="item3">ROTATE in Y axis </div>
+    <div id="item4">ROTATE in Z axis </div>
+</body>
+
+</html>
