@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 50px;
+        }
+        .item, .item2{
+            width: 120px;
+            height: 120px;
+            border-radius: 20px;
+            background-color: lightcoral;
+            text-align: center;
+            font-size: 25px;
+            
+        }
+        .item:hover{
+            transform: rotateY(1080deg);
+            transition-duration: 8s;
+            backface-visibility: hidden; 
+        }
+        .item2:hover{
+            transform: rotateY(1080deg);
+            transition-duration: 8s;
+            backface-visibility: visible; 
+        }
+    </style>
+</head>
+
+<body>
+    <h2>backface visibility hidden</h2>
+    <div class="item">Hover me</div>
+    <h2>backface visibility visible</h2>
+    <div class="item2">Hover me</div>
+</body>
+
+</html>
