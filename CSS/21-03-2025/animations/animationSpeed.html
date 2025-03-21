@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: relative;
+            text-align: center;
+            border-radius: 20%;
+            width: 100px ;
+            height: 50px;
+            font-weight: bold;
+            background-color: burlywood;
+            animation: move 6s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            margin: 20px;
+        }
+        @keyframes move {
+            from{left:0px}
+            to{ left:400px}
+        }
+        .d1{animation-timing-function: linear;}
+        .d2{animation-timing-function: ease;}
+        .d3{animation-timing-function: ease-in;}
+        .d4{animation-timing-function: ease-out;}
+        .d5{animation-timing-function: ease-in-out;}
+    </style>
+</head>
+<body>
+    <h2>Animation speed according to animatiom-timing-function</h2>
+    <div class="d1">linear</div>
+    <div class="d2">ease</div>
+    <div class="d3">ease-in</div>
+    <div class="d4">ease-out</div>
+    <div class="d5">ease-in-out</div>
+</body>
+</html>

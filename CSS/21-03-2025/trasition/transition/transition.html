@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .item1 {
+            width: 150px;
+            height: 100px;
+            background-color: lightcoral;
+            border: 1px solid darkgray;
+            transition: width 2s;
+            margin-bottom: 50px;
+        }
+
+        .item1:hover {
+            width: 400px;
+        }
+
+        .item2 {
+            width: 150px;
+            height: 100px;
+            background-color: lightcoral;
+            border: 1px solid darkgray;
+            transition: width 2s, height 2s;
+        }
+
+        .item2:hover {
+            width: 250px;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item1"> HOVER ME ! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, neque!</div>
+    <div class="item2"> HOVER ME ! </div>
+</body>
+
+</html>
