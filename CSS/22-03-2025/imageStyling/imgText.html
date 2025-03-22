@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image text</title>
+    <style>
+        .container {
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.6;
+        }
+
+        .topleft {
+            position: absolute;
+            top: 8px;
+            left: 12px;
+            font-size: 20px;
+        }
+        .topright {
+            position: absolute;
+            top: 8px;
+            right: 12px;
+            font-size: 20px;
+        }
+        .bottomleft {
+            position: absolute;
+            bottom: 8px;
+            left: 12px;
+            font-size: 20px;
+        }
+        .bottomright {
+            position: absolute;
+            bottom: 8px;
+            right: 12px;
+            font-size: 20px;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="../pic/nature-3082832_1920.jpg" alt="nature_img" width="400px" height="300px">
+        <div class="topleft">Top left</div>
+        <div class="topright">Top Right</div>
+        <div class="bottomleft">Bottom left</div>
+        <div class="bottomright">Bottom Right</div>
+        <div class="centered">Centered</div>
+    </div>
+</body>
+
+</html>
