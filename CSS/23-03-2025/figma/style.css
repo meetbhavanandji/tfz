@@ -16,6 +16,19 @@ body {
     font-size: 1rem;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 18px;
+}
+
 .logo .img01 {
     height: 90px;
 }
