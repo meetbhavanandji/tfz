@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .clip-path img {
+            width: 200px;
+            height: 200px;
+            clip-path: circle(50%);
+        }
+
+        .clip-path01 img {
+            width: 200px;
+            height: 200px;
+            clip-path: circle(50% at right);
+        }
+
+        .shape-outside img {
+            float: left;
+            width: 200px;
+            height: 200px;
+            clip-path: circle(40%);
+            shape-outside: circle(45%);
+        }
+        .shape-outside{
+            border: 1px solid greenyellow;            
+            padding: 20px;
+        }
+        .ellipse img {
+            width: 200px;
+            height: 200px;
+            clip-path: ellipse(50% 35%);
+        }
+        .ellipse1 img {
+            width: 200px;
+            height: 200px;
+            clip-path: ellipse(50% 35% at right);
+        }
+        .ellipse2 img {
+            float: left;
+            width: 200px;
+            height: 200px;
+            clip-path: ellipse(40% 50%);
+            shape-outside: ellipse(45% 50%);
+        }
+        .ellipse2{
+            border: 1px solid green;
+            padding: 20px;
+        }
+        .polygon img {
+            width: 200px;
+            height: 200px;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);  
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Circle()</h2>
+    <div class="border">
+        <img src="./pineapple.jpg" alt="pineapple">
+    </div>
+    <div class="clip-path">
+        <img src="./pineapple.jpg" alt="pineapple">
+    </div>
+    <div class="clip-path01">
+        <img src="./pineapple.jpg" alt="pineapple">
+    </div>
+    <div class="shape-outside">
+        <img src="./pineapple.jpg" alt="pineapple">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum est atque magnam, velit enim dolore! Veniam
+            quam similique excepturi exercitationem accusantium velit fugiat dolor enim nobis aspernatur voluptatibus
+            explicabo unde expedita aliquid consectetur consequuntur inventore magni cumque sed suscipit, illum optio.
+            illo, quod molestias provident debitis, culpa, consequuntur asperiores quos. Repudiandae ad excepturi, ut
+            Commodi sed amet culpa enim aspernatur accusantium velit laudantium voluptates nobis facere, dolore
+            quam similique excepturi exercitationem accusantium velit fugiat dolor enim nobis aspernatur voluptatibus
+            quam similique excepturi exercitationem accusantium velit fugiat dolor enim nobis aspernatur voluptatibus
+            explicabo unde expedita aliquid consectetur consequuntur inventore magni cumque sed suscipit, illum optio.
+            illo, quod molestias provident debitis, culpa, consequuntur asperiores quos. Repudiandae ad excepturi, ut
+            Commodi sed amet culpa enim aspernatur accusantium velit laudantium voluptates nobis facere, dolore
+            quam similique excepturi exercitationem accusantium velit fugiat dolor enim nobis aspernatur voluptatibus
+            quam similique excepturi exercitationem accusantium velit fugiat dolor enim nobis aspernatur voluptatibus
+            eligendi, hic accusamus aut. Enim quo saepe explicabo architecto atque nisi ut aliquid iusto alias aperiam
+            Commodi sed amet culpa enim aspernatur accusantium velit laudantium voluptates nobis facere, dolore
+            illo, quod molestias provident debitis, culpa, consequuntur asperiores quos. Repudiandae ad excepturi, ut
+            quam similique excepturi exercitationem accusantium velit fugiat dolor enim nobis aspernatur voluptatibus
+            eaque sed reprehenderit praesentium error iusto aspernatur molestiae voluptatem corporis harum itaque
+            eaque sed reprehenderit praesentium error iusto aspernatur molestiae voluptatem corporis harum itaque</p>
+    </div>
+    <h2>ellipse()</h2>
+    <div class="ellipse">
+        <img src="./pineapple.jpg" alt="pineapple">
+    </div>
+    <div class="ellipse1">
+        <img src="./pineapple.jpg" alt="pineapple">
+    </div>
+    <div class="ellipse2">
+        <img src="./pineapple.jpg" alt="pineapple">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum est atque magnam, velit enim dolore! Veniam
+            quam similique excepturi exercitationem accusantium velit fugiat dolor enim nobis aspernatur voluptatibus
+            explicabo unde expedita aliquid consectetur consequuntur inventore magni cumque sed suscipit, illum optio.
+            illo, quod molestias provident debitis, culpa, consequuntur asperiores quos. Repudiandae ad excepturi, ut
+            Commodi sed amet culpa enim aspernatur accusantium velit laudantium voluptates nobis facere, dolore
+            quam similique excepturi exercitationem accusantium velit fugiat dolor enim nobis aspernatur voluptatibus
+            quam similique excepturi exercitationem accusantium velit fugiat dolor enim nobis aspernatur voluptatibus
+            explicabo unde expedita aliquid consectetur consequuntur inventore magni cumque sed suscipit, illum optio.
+            illo, quod molestias provident debitis, culpa, consequuntur asperiores quos. Repudiandae ad excepturi, ut
+            Commodi sed amet culpa enim aspernatur accusantium velit laudantium voluptates nobis facere, dolore
+            quam similique excepturi exercitationem accusantium velit fugiat dolor enim nobis aspernatur voluptatibus
+            quam similique excepturi exercitationem accusantium velit fugiat dolor enim nobis aspernatur voluptatibus
+            eligendi, hic accusamus aut. Enim quo saepe explicabo architecto atque nisi ut aliquid iusto alias aperiam
+            Commodi sed amet culpa enim aspernatur accusantium velit laudantium voluptates nobis facere, dolore
+            illo, quod molestias provident debitis, culpa, consequuntur asperiores quos. Repudiandae ad excepturi, ut
+            quam similique excepturi exercitationem accusantium velit fugiat dolor enim nobis aspernatur voluptatibus
+            eaque sed reprehenderit praesentium error iusto aspernatur molestiae voluptatem corporis harum itaque
+            eaque sed reprehenderit praesentium error iusto aspernatur molestiae voluptatem corporis harum itaque</p>
+    </div>
+    <h2>Polygon()</h2>
+    <div class="polygon">
+        <img src="./pineapple.jpg" alt="pineapple">
+    </div>
+</body>
+
+</html>
