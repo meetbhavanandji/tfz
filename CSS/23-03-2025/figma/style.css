@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background-color: #302c42; */
+    background-color: #1C1C3C;
+    color: #FFFFFF;
+}
+
+/*Nav Bar*/
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    font-size: 1rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 18px;
+}
+
+.logo .img01 {
+    height: 90px;
+}
+.logo .img02 {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+.nav-links li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.header-buttons button {
+    background-color: transparent;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+.contact-us{
+    border: 1px solid white;
+}
+.join-hydra{
+    color: black;
+    background-image: linear-gradient(to right, #8379B2 , #BDB4E5);
+    border: none;
+}
+
+.toggle_btn{
+    display: none;
+    top: 5rem;
+    align-items: center;
+}
+
+.dropdown_menu{
+    /* display: none; */
+    position: absolute;
+    right: 0rem;
+    top: 120px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    border-radius: 2px;
+    text-align: center;
+    list-style: none;
+    height: 0;
+}
+/* .dropdown_menu.open{
+    height: 250px;
+} */
+
+.dropdown_menu li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.close-button{
+    float: right;
+    text-align: right;
+}
+ 
+@media  (max-width:992px) {
+    .navbar, .nav-links, .header-buttons,.toggle_btn {
+        display:none;
+        }
+     .toggle_btn,.navbar{
+        display: block;
+        }
+    .toggle_btn{
+        float: right;
+        }
+    /* .dropdown_menu{
+        display: block;
+    }
+   */
+} 
