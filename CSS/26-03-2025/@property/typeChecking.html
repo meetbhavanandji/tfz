@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checking type mistake</title>
+    <style>
+        @property --bg-colr {
+            syntax: "<color>";
+            inherits: true;
+            initial-value: lightgray;
+        }
+
+        div {
+            width: 400px;
+            height: 100px;
+            padding: 20px;
+            background-color: var(--bg-colr);
+        }
+
+        .div-2 {
+            --bg-colr: lightgreen;
+        }
+
+        .div-3 {
+            --bg-colr: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div>div-1</div>
+
+    <div class="div-2">div-2</div>
+
+    <!--in this div property value is given wrong value and it set the default custom variable value which is lightgray-->
+
+    <div class="div-3">div-3 (in this div property value is given wrong value)</div>
+</body>
+
+</html>
