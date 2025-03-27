@@ -105,7 +105,7 @@ body {
  
 @media  (max-width:992px) {
     .navbar, .nav-links, .header-buttons,.toggle_btn {
-        display:none;
+        display:block;
         }
      .toggle_btn,.navbar{
         display: block;
