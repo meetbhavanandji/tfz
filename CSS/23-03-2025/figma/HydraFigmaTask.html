@@ -11,12 +11,12 @@
 
 <body>
     <header class="navbar">
-        <div class="logo" >
+        <div class="logo">
             <div class="image-flex">
                 <img class="img01" src="./Vector.png" alt="HYDRA Logo">
                 <img class="img02" src="./Group.png" alt="HYDRA Text">
             </div>
-            <div class="toggle_btn"><i class="fa-solid fa-bars-staggered"></i></div>
+
         </div>
         <nav>
             <ul class="nav-links">
@@ -26,13 +26,25 @@
                 <li><a href="#how-to">HOW TO</a></li>
             </ul>
         </nav>
-
         <div class="header-buttons">
             <button class="contact-us">CONTACT US</button>
             <button class="join-hydra">JOIN HYDRA</button>
         </div>
+
+        <!-- toggle-button -->
+        <label class="tog-btn">
+            <input type="checkbox" name="ckeckbox" id="checkbox">
+            <div class="toggle">
+                <label for="checkbox">
+                    <span class="top-line common"></span>
+                    <span class="middle-line common"></span>
+                    <span class="last-line common"></span>
+                </label>
+            </div>
+        </label>
+        
         <div class="dropdown_menu open">
-            <div class="close-button"><i class="fa-solid fa-xmark"></i></div>
+            <!-- <div class="close-button"><i class="fa-solid fa-xmark"></i></div> -->
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#services">SERVICES</a></li>
             <li><a href="#technologies">TECHNOLOGIES</a></li>
