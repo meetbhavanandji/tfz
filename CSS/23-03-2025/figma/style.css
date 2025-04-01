@@ -1,13 +1,15 @@
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  /* background-color: #302c42; */
   background-color: #1c1c3c;
   color: #ffffff;
 }
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 /*Nav Bar*/
 .navbar {
   /* width: 1fr; */
@@ -222,9 +224,17 @@ input:checked + .dropdown_menu {
     justify-content: left;
   }
 }
-/*  
-@media  (max-width:768px) {
-    .tog-btn{
-        display: block;
+
+@media  (min-width:768px) {
+    .tog-btn,
+    .dropdown_menu{
+        display: none;
     }
-}        */
+}        
+@media  (min-width:768px) {
+    .tog-btn{
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}        
