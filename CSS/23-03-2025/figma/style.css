@@ -238,3 +238,7 @@ input:checked + .dropdown_menu {
         right: 0;
     }
 }        
+
+@media   screen and  (max-width:768px) {
+  
+}
