@@ -1,17 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydra VR</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1e1b2e;
+  color: #fff;
+}
+
+.card-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #292642;
+  border-radius: 20px;
+}
+
+.card {
+  background-color: #1f1c33;
+  border-radius: 16px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.2em;
+  color: #b69df8;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.card button {
+  padding: 10px 20px;
+  background-color: #7b6ef6;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #9a85ff;
+}
+
+.hardware-section {
+  background-image: url('images/hardware-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  position: relative;
+  border-radius: 20px;
+  margin: 40px 20px;
+}
+
+.overlay {
+  background-color: rgba(30, 27, 46, 0.85);
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.overlay h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2em;
+  color: #dcdcdc;
+}
+
+.scroll-indicator {
+  font-size: 2em;
+  margin-top: 20px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+  </style>
 </head>
-
 <body>
+  <section class="card-section">
+    <div class="card">
+      <img src="images/simulation.jpg" alt="Simulation">
+      <h3>SIMULATION</h3>
+      <p>
+        Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus.
+      </p>
+      <button>TRY IT NOW</button>
+    </div>
+    <div class="card">
+      <img src="images/education.jpg" alt="Education">
+      <h3>EDUCATION</h3>
+      <p>
+        Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus.
+      </p>
+      <button>TRY IT NOW</button>
+    </div>
+    <div class="card">
+      <img src="images/selfcare.jpg" alt="Self-care">
+      <h3>SELF-CARE</h3>
+      <p>
+        Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus.
+      </p>
+      <button>TRY IT NOW</button>
+    </div>
+    <div class="card">
+      <img src="images/outdoor.jpg" alt="Outdoor">
+      <h3>OUTDOOR</h3>
+      <p>
+        Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus.
+      </p>
+      <button>TRY IT NOW</button>
+    </div>
+  </section>
 
+  <section class="hardware-section">
+    <div class="overlay">
+      <h2>TECHNOLOGIES & HARDWARE</h2>
+      <p>USED BY HYDRA VR.</p>
+      <div class="scroll-indicator">⌄</div>
+    </div>
+  </section>
 </body>
-
 </html>
