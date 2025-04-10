@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOTER DEMO</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #302c42;
+            /* color: #fff; */
+            /* text-align: center; */
+            margin-top: 50px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+
+            /* column-gap: 20px; */
+        }
+
+        .logo {
+            padding: 0 50px;
+            border-right: 3px outset #C0B7E8;
+
+        }
+
+        .logo img {
+            width: 185px;
+            height: 185px;
+        }
+
+        .naw {
+            display: flex;
+            flex-direction: column;
+            row-gap: 7px;
+            padding: 0 50px;
+            border-right: 3px outset #C0B7E8;
+        }
+
+        .naw a {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .tool {
+            padding: 0 50px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 7px;
+            border-right: 3px outset #C0B7E8;
+        }
+
+        .tool a {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .social {
+            padding: 0 50px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+        }
+
+       
+
+        #in {
+            margin-left: 10px;
+        }
+
+        .byw {
+            background: linear-gradient(45deg, #8176AF, #C0B7E8);
+            border-radius: 40px;
+            padding: 12px 0;
+            border: none;
+            font-size: 12px;
+            font-weight: 700;
+            color: #343045;
+        }
+
+        .byw:hover {
+            opacity: 0.7;
+        }
+
+        #line-ani {
+            width: 0px;
+            height: 2px;
+            background-color: lightslategray;
+            transition: width 0.1s;
+        }
+
+        a:hover+#line-ani {
+            width: 100px;
+        }
+
+        .lan {
+            margin: auto;
+            margin-top: 50px;
+            width: 1269px;
+            height: 1px;
+            background-color: #8176AF;
+        }
+
+        .lan2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 4px;
+        }
+
+        .copy {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="footer">
+
+        <div class="logo">
+            <img src="../assests/logo.png" alt="">
+        </div>
+
+        <div class="naw">
+            <a href="#">ABOUT</a>
+            <div id="line-ani"></div>
+            <a href="#">SERVICES</a>
+            <div id="line-ani"></div>
+            <a href="#">TECHNOLOGIES</a>
+            <div id="line-ani"></div>
+            <a href="#">HOW TO</a>
+            <div id="line-ani"></div>
+            <a href="#">JOIN HYDAR</a>
+            <div id="line-ani"></div>
+        </div>
+
+        <div class="tool">
+            <a href="#">F.A.Q</a>
+            <div id="line-ani"></div>
+            <a href="#">SITEMAP</a>
+            <div id="line-ani"></div>
+            <a href="#">CONDITIONS</a>
+            <div id="line-ani"></div>
+            <a href="#">LICENSES</a>
+            <div id="line-ani"></div>
+        </div>
+
+        <div class="social">
+            <div>SOCIALIZE WITH HYDRA</div>
+            <div class="icon">
+                <a href="https://www.facebook.com/"><img src="../assests/facebook.png" alt=""></a>
+                <a href="https://www.twitter.com/"><img id="in" src="../assests/twitter.png" alt=""></a>
+                <a href="https://www.linkedin.com/"><img id="in" src="../assests/linkedin.png" alt=""></a>
+                <a href="https://www.youtube.com/"><img id="in" src="../assests/youtube.png" alt=""></a>
+                <a href="https://www.instagram.com/"><img id="in" src="../assests/instagram.png" alt=""></a>
+                <a href="https://www.pinterest.com/"><img id="in" src="../assests/pinterest.png" alt=""></a>
+            </div>
+            <button class="byw">BUILD YOUR WORLD</button>
+        </div>
+    </div>
+    <div class="lan"></div>
+    <div class="lan2">2023 © <a class="copy" href="../index.html">HYDRA LANDING PAGE</a> - BY ZINE. E. FALOUTI - ALL
+        RIGHTS RESERVED </div>
+</body>
+
+</html>

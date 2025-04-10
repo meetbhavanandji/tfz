@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactForm</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #302c42;
+            /* color: #fff; */
+            /* text-align: center; */
+        }
+
+        .container {
+            margin: 100px;
+            padding: 50px 80px;
+            background: radial-gradient(#403A5F, #211E2E);
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            /* object-fit: cover; */
+            border-radius: 80px;
+        }
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        #line {
+            width: 330px;
+            /* text-align: center; */
+            margin: auto;
+            height: 1px;
+            background: linear-gradient(#343045, #C0B7E8, #8176AF, #343045);
+        }
+
+        .top p {
+            font-size: 36px;
+            font-weight: 300;
+            color: #ffffff;
+            /* margin-bottom: 20px; */
+            word-spacing: 5px;
+        }
+
+        .grid-box {
+            display: grid;
+            grid-template-areas:
+                'myarea1 myarea2'
+                'myarea3 myarea4'
+                'myarea5 myarea5'
+                'myarea6 myarea6'
+                'myarea6 myarea6'
+                'myarea6 myarea6'
+                'myarea6 myarea6';
+            gap: 20px;
+        }
+
+
+        input {
+            /* width: 524px; */
+            padding: 20px 80px;
+            background-color: transparent;
+            border: 2px solid #ffffff;
+            border-radius: 40px;
+            color: #C0B7E8;
+        }
+
+        
+        #fname {grid-area: myarea1;}
+
+        #lname {grid-area: myarea2;}
+
+        #email {grid-area: myarea3;}
+
+        #phone-no {grid-area: myarea4;}
+
+        #subject {grid-area: myarea5;}
+
+        #text-box {
+            grid-area: myarea6;
+            /* -ms-grid-row-span: 2/2; */
+            grid-row-start: 4;
+            grid-row-end: 8;
+        }
+
+
+
+        button {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 8;
+            /* grid-row-end: 8; */
+            background: linear-gradient(45deg, #8176AF, #C0B7E8);
+            border-radius: 40px;
+            width: 214px;
+            height: 48px;
+            margin: auto;
+            border: none;
+            font-size: 12px;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="top">
+            <h2>JOIN HYDRA</h2>
+            <div id="line"></div>
+            <p>Let's Build Your VR Experience</p>
+        </div>
+
+        <div class="grid-box">
+            <label for="fname"></label>
+            <input type="text" name="fname" id="fname" placeholder="First Name">
+            <label for="lname"></label>
+            <input type="text" name="lname" id="lname" placeholder="Last Name">
+
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <label for="phone-no"></label>
+            <input type="tel" name="phone-no" id="phone-no" placeholder="Phone Number">
+
+            <label for="subject"></label>
+            <input type="text" name="subject" id="subject" placeholder="Subject">
+
+            <label for="text-box"></label>
+            <input type="text" name="text-box" id="text-box" placeholder="Tell Us Something..."
+                style="height: 210px; padding: 0 80px;">
+            <button>SEND TO HYDRA</button>
+
+        </div>
+    </section>
+</body>
+
+</html>
