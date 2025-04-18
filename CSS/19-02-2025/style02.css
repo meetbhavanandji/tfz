@@ -1,0 +1,28 @@
+/* class selecter */
+.html{
+    color: #DE4A27;
+}
+.css{
+    color: #2D53E5;
+}
+.javascript{
+    color: #f1dc55;
+}
+.tailwind{
+    color: #08BBD9;
+}
+
+/* group selector */
+body{
+    font-size: 30px;
+}
+
+/* element selector */
+li {
+    background-color: bisque;
+}
+
+/* attribute selector */
+[class] {
+    font-style: italic;
+}

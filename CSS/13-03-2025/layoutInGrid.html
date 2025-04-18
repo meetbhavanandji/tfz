@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        .logo img{
+            width: 164px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: "Segoe UI";
+        }
+
+        .right ul {
+            display: flex;
+            gap: 34px;
+        }
+
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .right ul li span{
+            padding: 0 5px;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            "item1 item2 item3"
+            "item4 item5 item6"
+            "item7 item8 item9"
+            "item10";
+            border: 5px solid black;
+            width: 100vh;
+            justify-self: center;
+            margin-top: 50px;
+            height: 70vh;
+          
+        }
+        .item{
+            border: 1px solid black;
+        }
+        .item-01{
+            grid-area: item1;
+        }
+        .item-02{
+            grid-area: item2;
+        }
+        .item-03{
+            grid-area: item3;
+        }
+        .item-04{
+            grid-area: item4;
+        }
+        .item-05{
+            grid-area: item5;
+        }
+        .item-06{
+            grid-area: item6;
+        }
+        .item-07{
+            grid-area: item7;
+        }
+        .item-08{
+            grid-area: item8;
+        }
+        .item-09{
+            grid-area: item9;
+        }
+        .item-10{
+            grid-area: item10;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Products </span>
+                        </li>
+                    <li><span>For business </span>
+                        </li>
+                    <li><span>Resources </span>
+                        </li>
+                    <li><span>Support </span>
+                        </li>
+                    <li><span>Our company </span>
+                        </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="grid-container">
+        <div class="item item-01">1</div>
+        <div class="item item-02">2</div>
+        <div class="item item-03">3</div>
+        <div class="item item-04">4</div>
+        <div class="item item-05">5</div>
+        <div class="item item-06">6</div>
+        <div class="item item-07">7</div>
+        <div class="item item-08">8</div>
+        <div class="item item-09">9</div>
+        <div class="item item-10">10</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

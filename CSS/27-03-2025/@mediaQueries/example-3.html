@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example 3</title>
+    <style>
+        .container {
+            /* float: left; */
+            background-color: #ccc;
+            overflow: auto;
+        }
+        .left-sidebar{
+            float: none;
+            width: auto;
+        }
+        .menu{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            list-style: none;
+            background-color: lightgreen;
+            border: 1px solid gray;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+
+        }
+        .main{
+            margin-left: 20px;
+        }
+        @media screen and (min-width:450px) {
+            .left-sidebar{
+                width: 150px;
+                float: left;
+            }
+            .main{
+                margin-left: 170px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-sidebar">
+            <ul class="menu">
+                <li>menu 1</li>
+                <li>menu 2</li>
+                <li>menu 3</li>
+                <li>menu 4</li>
+                <li>menu 5</li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1>The Heading</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio nihil accusantium laborum,
+                atque voluptas consequatur maxime provident, reprehenderit voluptatem vel adipisci eos deserunt. Esse id
+                eaque inventore nesciunt quisquam?</p>
+        </div>
+    </div>
+</body>
+
+</html>

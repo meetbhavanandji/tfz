@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select</title>
+</head>
+
+<body>
+    <fieldset>
+        <label for="car"> Choose a Car : </label>
+        <select name="car" id="car"  size="10">
+            <option value="mercedes" disabled> Mercedes </option>
+            <option value="mazada"> Mazada</option>
+            <optgroup label="Dodge">
+                <option value="chalenger">Chalenger</option>
+                <option value="devil"> Devil</option> 
+            <optgroup label="BMW">
+                <option value="m batch"> M Batch</option>
+                <option value="x series"> X series </option>
+            </optgroup>
+            <option value="defender"> Defender</option>
+        </select>
+        <button type="submit" onclick="alert('Submited')"> submit</button>
+    </fieldset>
+</body>
+
+</html>

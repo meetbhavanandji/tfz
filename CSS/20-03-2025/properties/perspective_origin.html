@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perspective</title>
+    <style>
+        .item1{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin-top: 150px;
+            margin-left: 230px;
+            border: 1px solid black;
+            padding: 20px;
+            perspective: 130px;
+            perspective-origin: right;
+        }
+        .item2{
+            position: absolute;
+            padding: 50px;
+            background-color: lightcyan;
+            border: 1px solid black;
+            transform: rotateY(60deg);
+        }
+        .item3{
+            position: relative;
+            float: right;
+            width: 200px;
+            height: 200px;
+            margin-top: -230px;
+            margin-right: 150px;
+            border: 1px solid black;
+            padding: 20px;
+            perspective: 130px;
+            perspective-origin: left;
+        }
+        .item4{
+            position: absolute;
+            padding: 50px;
+            background-color: lightcyan;
+            border: 1px solid black;
+            transform: rotateY(-60deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="item1">
+        <div class="item2">Perspective</div>
+    </div>
+    <div class="item3">
+        <div class="item4">Perspective</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> var() function </title>
+    <style>
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+        }
+
+        body {
+            padding: 25px;
+            background-color: var(--black);
+            color: var(--white);
+            border: 2px solid var(--white);
+
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--white);
+        }
+
+        button {
+            background-color: var(--white);
+        }
+
+        .container {
+            --fontsize: 25px;
+            font-size: var(--fontsize);
+        }
+
+        @media screen and (min-width : 450px) {
+            .container {
+                --fontsize: 50px;
+            }
+            :root{
+                --black: lightblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is heading</h2>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quasi cupiditate porro inventore quia ipsam ab
+        possimus perferendis nulla libero ipsa, cumque veritatis illum sit perspiciatis expedita illo laboriosam
+        pariatur.
+    </div>
+    <button>Submit</button>
+</body>
+
+</html>

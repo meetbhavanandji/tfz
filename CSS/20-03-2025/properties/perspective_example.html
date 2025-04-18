@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 2em;
+
+        }
+        .dice {
+            width: 2em;
+            font-size: 4em;
+            margin: 1.5em auto;
+            transform-style: preserve-3d;
+            transform: perspective(10cm) rotateX(-15deg) rotateY(30deg);
+            /* box-shadow: 0px 10px 5px  black; */
+        }
+
+        .side {
+            position: absolute;
+            color: white;
+            width: 2em;
+            height: 2em;
+            background-color: rgba(100, 100, 100, 0.4);
+            border: 2px solid black;
+            text-align: center;
+            line-height: 2em;
+            box-shadow: -1px -1px 60px -6px black inset;
+        }
+
+        .front {
+            transform: translateZ(1em);
+        }
+
+        .top {
+            transform: rotateX(90deg) translateZ(1em);
+        }
+
+        .right {
+            transform: rotateY(90deg) translateZ(1em);
+        }
+
+        .left {
+            transform: rotateY(-90deg) translateZ(1em);
+        }
+
+        .bottom {
+            transform: rotateX(-90deg) translateZ(1em);
+        }
+
+        .back {
+            transform: rotateY(-180deg) translateZ(1em);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>3d Dice</h1>
+    <div class="dice">
+        <div class="side front">1</div>
+        <div class="side back">6</div>
+        <div class="side left">3</div>
+        <div class="side right">4</div>
+        <div class="side top">5</div>
+        <div class="side bottom">2</div>
+    </div>
+</body>
+
+</html>

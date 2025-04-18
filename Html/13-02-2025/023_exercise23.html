@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal data form</title>
+    <style>
+        .maincontainer {
+            border: 1px solid rgb(156, 155, 155);
+            font-family: sans-serif;
+            display: block;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .name{
+            display: block;
+            overflow: auto;
+            margin-left: 10px;
+        }
+        .gender {
+           margin: 10px;
+        
+        }
+        .gender input{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div class="name">
+            <form action="action.php" method="get">
+                <label for="fname">First Name :</label>
+                <input type="text" name="fname" id="fname" placeholder="Your name"><br>
+                <label for="mname"> Middle name :</label>
+                <input type="text" name="mname" id="mname" placeholder="Your father name"><br>
+                <label for="lname"> Last name :</label>
+                <input type="text" name="lname" id="lname" placeholder="Surname"><br>
+        </div>
+        <div class="gender">
+            <span>Choose Gender :</span><br>
+            <label for="radio">Male</label>
+            <input type="radio" name="radio" id="male"><br>
+            <label for="radio">Female</label>
+            <input type="radio" name="radio" id="female"><br>
+            <label for="radio">other</label>
+            <input type="radio" name="radio" id="other"><br>
+        </div>
+        <div class="country">
+            <label for="country"> Choose Your country : </label>
+            <input list="contry" name="country" id="country">
+            <datalist id="contry">
+                <option value="India">
+                <option value="Caneda">
+                <option value="Niezieria">
+                <option value="Denmark">
+            </datalist>
+        </div>
+        <div class="submit">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

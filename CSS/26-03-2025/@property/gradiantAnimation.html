@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradiant animation</title>
+    <style>
+        
+        @property --start-color{
+            syntax: "<color>";
+                initial-value: #bfd641;
+            inherits: false;
+        }
+        @property --end-color{
+            syntax: "<color>";
+                initial-value: #bc70a4;
+            inherits: false;
+        }
+        .gradiant{
+            background: linear-gradient( to right ,var(--start-color), var(--start-color));
+            animation: gradiant 3s linear infinite;
+            height: 200px;
+        }
+        @keyframes gradiant{
+            0% , 100%{
+                --start-color:#bfd641;
+                --end-color:#bc70a4;
+            }
+            50%{
+                --start-color:#bc70a4;
+                --end-color:#61e82b;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gradiant"></div>
+</body>
+</html>
