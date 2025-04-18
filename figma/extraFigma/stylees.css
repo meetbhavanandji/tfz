@@ -364,7 +364,11 @@ nav a:hover {
   /* margin-left: 20px; */
 }
 
-
+.cardvr{
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-around;
+}
 
 .about-section {
   margin-top: 100px;

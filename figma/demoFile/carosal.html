@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Carousel</title>
+  <style>
+    body {
+      background-color: #1b1a2e;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .carousel-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+    }
+
+    .card-container {
+      display: flex;
+      transition: transform 0.5s ease;
+      width: 100%;
+    }
+
+    .card {
+      flex: 1 1 25%;
+      margin: 10px;
+      background-color: #2d2945;
+      border-radius: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+      color: white;
+      text-align: center;
+    }
+
+    .card h2 {
+      margin: 16px 0 8px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .card button {
+      margin-top: 16px;
+      padding: 10px 20px;
+      background: linear-gradient(to right, #8f7bf4, #a185e0);
+      border: none;
+      border-radius: 20px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .arrow {
+      display: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #3d3657;
+      border: none;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .arrow.left {
+      left: -16px;
+    }
+
+    .arrow.right {
+      right: -16px;
+    }
+
+    @media (max-width: 768px) {
+      .card-container {
+        flex-direction: row;
+        transform: translateX(0);
+      }
+
+      .card {
+        min-width: 100%;
+        flex: 0 0 100%;
+      }
+
+      .arrow {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel-wrapper">
+    <button class="arrow left">&#8592;</button>
+
+    <div class="card-container">
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Simulation">
+        <h2>SIMULATION</h2>
+        <p>Vitae sapien pellentesque habitant morbi nunc. Vivamus aliquet porttitor rhoncus libero justo.</p>
+        <button>TRY IT NOW</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Education">
+        <h2>EDUCATION</h2>
+        <p>Vitae sapien pellentesque habitant morbi nunc. Vivamus aliquet porttitor rhoncus libero justo.</p>
+        <button>TRY IT NOW</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Self-Care">
+        <h2>SELF-CARE</h2>
+        <p>Vitae sapien pellentesque habitant morbi nunc. Vivamus aliquet porttitor rhoncus libero justo.</p>
+        <button>TRY IT NOW</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Outdoor">
+        <h2>OUTDOOR</h2>
+        <p>Vitae sapien pellentesque habitant morbi nunc. Vivamus aliquet porttitor rhoncus libero justo.</p>
+        <button>TRY IT NOW</button>
+      </div>
+    </div>
+
+    <button class="arrow right">&#8594;</button>
+  </div>
+
+  <script>
+    const container = document.querySelector('.card-container');
+    const cards = document.querySelectorAll('.card');
+    const leftBtn = document.querySelector('.arrow.left');
+    const rightBtn = document.querySelector('.arrow.right');
+
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      container.style.transform = `translateX(-${currentIndex * 100}%)`;
+      leftBtn.style.display = currentIndex === 0 ? 'none' : 'block';
+      rightBtn.style.display = currentIndex === cards.length - 1 ? 'none' : 'block';
+    }
+
+    rightBtn.addEventListener('click', () => {
+      if (currentIndex < cards.length - 1) {
+        currentIndex++;
+        updateCarousel();
+      }
+    });
+
+    leftBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+      }
+    });
+
+    function handleResize() {
+      if (window.innerWidth > 768) {
+        container.style.transform = 'translateX(0)';
+        leftBtn.style.display = 'none';
+        rightBtn.style.display = 'none';
+      } else {
+        updateCarousel();
+      }
+    }
+
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('load', handleResize);
+  </script>
+</body>
+</html>
