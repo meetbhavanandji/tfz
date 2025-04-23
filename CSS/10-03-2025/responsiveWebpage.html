@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: arial;
+        }
+
+        .header {
+            text-align: center;
+            color: #ffffff;
+            background-color: #1ABC9C;
+            padding: 80px;
+        }
+
+        .navbar {
+            background-color: #333333;
+            display: flex;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            text-align: center;
+            color: #ffffff;
+            padding: 10px;
+        }
+
+        .navbar a:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+
+        .one {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .aside {
+            flex: 30%;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        .main {
+            flex: 70%;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        .image {
+            background-color: #aaaaaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .footer {
+            padding: 30px;
+            background-color: #aaaaaa;
+            text-align: center;
+        }
+
+        @media screen and (max-width:800px) {
+
+            .one,
+            .navbar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <h5>With a <b>flexible</b> Website</h5>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+
+    <div class="one">
+        <div class="aside">
+            <h2>About Me</h2>
+            <p>Photo of me:</p>
+            <div class="image" style="height: 200px;">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div class="image" style="height: 60px;">Image</div>
+            <div class="image" style="height: 60px;">Image</div>
+            <div class="image" style="height: 60px;">Image</div>
+
+        </div>
+        <div class="main">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2024</h5>
+            <div class="image" style="height: 200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco.</p>
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Sep 2, 2024</h5>
+            <div class="image" style="height: 200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+
+</html>

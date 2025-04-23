@@ -1,0 +1,74 @@
+    <!-- <section class="card-section">
+
+        <div class="card">
+            <img src="../assests/pexels-shvets-production-7561969 1.png" alt="">
+            <h3>SIMULATION</h3>
+            <div class="line"></div>
+            <p>
+                Vitae sapien pellentesque habitant morbi
+                nunc. Viverra aliquet porttitor rhoncus
+                libero justo laoreet sit amet vitae.
+            </p>
+            <button>TRY IT NOW</button>
+        </div>
+
+        <div class="card">
+            <img src="../assests/Mask group (2).png" alt="">
+            <h3>EDUCATION</h3>
+            <div class="line"></div>
+            <p>
+                Vitae sapien pellentesque habitant morbi
+                nunc. Viverra aliquet porttitor rhoncus
+                libero justo laoreet sit amet vitae.
+            </p>
+            <button>TRY IT NOW</button>
+        </div>
+
+        <div class="card">
+            <img src="../assests/Mask group (3).png" alt="">
+            <h3>SELF-CARE</h3>
+            <div class="line"></div>
+            <p>
+                Vitae sapien pellentesque habitant morbi
+                nunc. Viverra aliquet porttitor rhoncus
+                libero justo laoreet sit amet vitae.
+            </p>
+            <button>TRY IT NOW</button>
+        </div>
+
+        <div class="card">
+            <img src="../assests/Mask group (4).png" alt="">
+            <h3>OUTDOOR</h3>
+            <div class="line"></div>
+            <p>
+                Vitae sapien pellentesque habitant morbi
+                nunc. Viverra aliquet porttitor rhoncus
+                libero justo laoreet sit amet vitae.
+            </p>
+            <button>TRY IT NOW</button>
+        </div>
+
+    </section>
+
+    <section class="pixal">
+        <img src="../assests/pexels-rodnae-productions-8097332 1.png" alt="">
+        <img class="up_btn" src="../assests/chevron-small-down.png" alt="">
+        <!-- <button >∨</button> 
+        
+    </section>-->
+
+
+
+
+
+
+
+
+            <!-- <div class="why">WHY BUILD</div>
+    
+          <div class="vr01">
+            <div>WITH HYDRA ?</div>
+            <div>
+              <img src="../Component 1.png" alt="">
+            </div>
+          </div> -->

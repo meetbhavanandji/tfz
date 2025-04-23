@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>use in javascript</title>
+    <style>
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+        }
+
+        body {
+            padding: 25px;
+            background-color: var(--black);
+            color: var(--white);
+            border: 2px solid var(--white);
+
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--white);
+        }
+
+        button {
+            background-color: var(--white);
+        }
+    </style>
+    <script>
+        var r = document.querySelector(':root');
+
+        function myfunction_get() {
+            var rs = getComputedStyle(r);
+            alert("The value of --black is: " + rs.getPropertyValue('--black'));
+        }
+        function myfunction_set() {
+            r.style.setProperty('--black', 'white');
+            document.body.style.backgroundColor = 'white';
+            document.body.style.color = 'black';
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2>This is heading</h2>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quasi cupiditate porro inventore quia ipsam ab
+        possimus perferendis nulla libero ipsa, cumque veritatis illum sit perspiciatis expedita illo laboriosam
+        pariatur.
+    </div>
+    <button>Submit</button><br>
+    <button type="button" onclick="myfunction_get()">Get CSS Variable with JavaScript</button><br>
+    <button type="button" onclick="myfunction_set()">Change CSS Variable with JavaScript</button><br>
+</body>
+
+</html>

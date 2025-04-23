@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydra VR</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #302c42;
+      color: #fff;
+    }
+
+    .carousel-wrapper {
+      position: relative;
+      overflow: hidden;
+      padding: 40px 20px;
+    }
+
+    .card-section {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      transition: transform 0.5s ease;
+    }
+
+    .card {
+      background: radial-gradient(#433D60 -30%, #211E2E 90%);
+      border-radius: 40px;
+      width: 310px;
+      padding: 20px 0 50px;
+      text-align: center;
+      transition: transform 0.3s;
+      flex-shrink: 0;
+    }
+
+    .card img {
+      border-radius: 50%;
+    }
+
+    .card h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .line {
+      width: 154px;
+      margin: auto;
+      height: 1px;
+      background-color: rgba(191, 181, 232, 0.33);
+    }
+
+    .card p {
+      font-size: 12px;
+      color: #ffffff;
+      margin: 25px;
+      padding: 0 10px;
+      text-align: left;
+      font-weight: 400;
+    }
+
+    .card button {
+      padding: 16px 26px;
+      background: linear-gradient(90deg, #8176AF, #C0B7E8);
+      color: #343045;
+      border: none;
+      border-radius: 40px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .arrow {
+      display: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: linear-gradient(90deg, #8176AF, #C0B7E8);
+      border: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 24px;
+      color: #343045;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .arrow.left {
+      left: 10px;
+    }
+
+    .arrow.right {
+      right: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-wrapper {
+        padding: 40px 0;
+      }
+
+      .card-section {
+        transform: translateX(0);
+      }
+
+      .card {
+        min-width: 100vw;
+        box-sizing: border-box;
+        padding: 20px;
+      }
+
+      .arrow {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="carousel-wrapper">
+    <button class="arrow left">&#8592;</button>
+    <section class="card-section">
+      <div class="card">
+        <img src="../assests/pexels-shvets-production-7561969 1.png" alt="">
+        <h3>SIMULATION</h3>
+        <div class="line"></div>
+        <p>
+          Vitae sapien pellentesque habitant morbi
+          nunc. Viverra aliquet porttitor rhoncus
+          libero justo laoreet sit amet vitae.
+        </p>
+        <button>TRY IT NOW</button>
+      </div>
+
+      <div class="card">
+        <img src="../assests/Mask group (2).png" alt="">
+        <h3>EDUCATION</h3>
+        <div class="line"></div>
+        <p>
+          Vitae sapien pellentesque habitant morbi
+          nunc. Viverra aliquet porttitor rhoncus
+          libero justo laoreet sit amet vitae.
+        </p>
+        <button>TRY IT NOW</button>
+      </div>
+
+      <div class="card">
+        <img src="../assests/Mask group (3).png" alt="">
+        <h3>SELF-CARE</h3>
+        <div class="line"></div>
+        <p>
+          Vitae sapien pellentesque habitant morbi
+          nunc. Viverra aliquet porttitor rhoncus
+          libero justo laoreet sit amet vitae.
+        </p>
+        <button>TRY IT NOW</button>
+      </div>
+
+      <div class="card">
+        <img src="../assests/Mask group (4).png" alt="">
+        <h3>OUTDOOR</h3>
+        <div class="line"></div>
+        <p>
+          Vitae sapien pellentesque habitant morbi
+          nunc. Viverra aliquet porttitor rhoncus
+          libero justo laoreet sit amet vitae.
+        </p>
+        <button>TRY IT NOW</button>
+      </div>
+    </section>
+    <button class="arrow right">&#8594;</button>
+  </div>
+
+  <script>
+    const cardSection = document.querySelector('.card-section');
+    const cards = document.querySelectorAll('.card');
+    const leftBtn = document.querySelector('.arrow.left');
+    const rightBtn = document.querySelector('.arrow.right');
+
+    let index = 0;
+
+    function updateView() {
+      const cardWidth = cards[0].offsetWidth;
+      cardSection.style.transform = `translateX(-${index * cardWidth}px)`;
+
+      leftBtn.style.display = index === 0 ? 'none' : 'block';
+      rightBtn.style.display = index >= cards.length - 1 ? 'none' : 'block';
+    }
+
+    rightBtn.addEventListener('click', () => {
+      if (index < cards.length - 1) {
+        index++;
+        updateView();
+      }
+    });
+
+    leftBtn.addEventListener('click', () => {
+      if (index > 0) {
+        index--;
+        updateView();
+      }
+    });
+
+    function handleResize() {
+      if (window.innerWidth > 768) {
+        cardSection.style.transform = 'translateX(0)';
+        leftBtn.style.display = 'none';
+        rightBtn.style.display = 'none';
+      } else {
+        updateView();
+      }
+    }
+
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('load', handleResize);
+  </script>
+</body>
+
+</html>
+

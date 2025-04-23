@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> overrides</title>
+    <style>
+        @property --bg-colr{
+            syntax: "<color>";
+            inherits: true;
+            initial-value: lightblue;
+        }
+        div{
+            width: 400px;
+            height: 100px;
+            padding: 20px;
+            background-color: var(--bg-colr);
+        }
+        .div-2{
+            --bg-colr: lightcoral;
+        }
+        .div-3{
+            --bg-colr: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div>DIV 1(default custom variable)</div>
+    <div class="div-2" >DIV 2(override it)</div>
+    <div class="div-3" >DIV 3(also override it)</div>
+</body>
+
+</html>

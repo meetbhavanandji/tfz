@@ -1,0 +1,72 @@
+body {
+  background-color: hsl(216, 55%, 11%);
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.nft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  height: 596px;
+  width: 346px;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card .equilibrium {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.card h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+.card p {
+  color: hsl(215, 32%, 27%);
+}
+
+div.description {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.div1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+img.ethereum {
+  height: 20px;
+  width: 14px;
+}
+
+.div2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+.footer img {
+  width: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+}

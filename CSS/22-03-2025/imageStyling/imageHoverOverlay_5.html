@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            width: 20%;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #008cba;
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            transition: 0.5s ease;
+        }
+
+        .container:hover .overlay {
+            width: 100%;
+        }
+
+        .text {
+            white-space: nowrap;
+            position: absolute;
+            font-size: 20px;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="../pic/img_avatar.png" alt="avater" class="image">
+        <div class="overlay">
+            <div class="text">John</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

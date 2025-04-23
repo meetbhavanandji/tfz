@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 5px solid lightgreen;
+        padding: 5px;
+      }
+      .img1 {
+        float: right;
+      }
+      .img2 {
+        float: right;
+      }
+      .clearfix::after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Here without clearfix</h2>
+    <div>
+      <img class="img1" src="../pic/pineapple.jpg" alt="pineapple" style="width: 100px;" >Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Unde, ipsam
+    </div>
+
+    <h2>Here with clearfix</h2>
+    <div class="clearfix">
+      <img class="img2" src="../pic/pineapple.jpg" alt="pineapple" style="width: 100px;" >Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Unde, ipsam
+    </div>
+  </body>
+</html>

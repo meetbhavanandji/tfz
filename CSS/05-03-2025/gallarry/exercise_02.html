@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive gallary</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      h1{
+        text-align: center; 
+      }
+      .responsive {
+        padding: 0 8px;
+        float: left;
+        width: 24.99%;
+      }
+      .gallary {
+        margin: 7px;
+        width: 240px;
+        float: left;
+        border: 1px solid #777;
+      }
+      .gallary:hover {
+        border: 1px solid #333;
+        box-shadow: 0px 8px 16px 8px rgba(0, 0, 0, 0.2);
+      }
+      .gallary img {
+        width: 100%;
+        height: auto;
+      }
+      .des {
+        text-align: center;
+        padding: 15px;
+      }
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99%;
+          margin: 6px 0;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Gallary</h1>
+    <div class="responsive">
+      <div class="gallary">
+        <a href="../pic/01.jpg" target="_blank">
+          <img src="../pic/01.jpg" alt="01" width="600" height="400" />
+        </a>
+        <div class="des">Add a description</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallary">
+        <a href="../pic/02.jpg" target="_blank">
+          <img src="../pic/02.jpg" alt="02" width="600" height="400" />
+        </a>
+        <div class="des">Add a description</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallary">
+        <a href="../pic/03.jpg" target="_blank">
+          <img src="../pic/03.jpg" alt="03" width="600" height="400" />
+        </a>
+        <div class="des">Add a description</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallary">
+        <a href="../pic/04.jpg" target="_blank">
+          <img src="../pic/04.jpg" alt="04" width="600" height="400" />
+        </a>
+        <div class="des">Add a description</div>
+      </div>
+    </div>
+  </body>
+</html>
